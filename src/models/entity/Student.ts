@@ -1,7 +1,7 @@
 import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
 
 @Entity()
-export class User {
+export class Student {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -9,7 +9,10 @@ export class User {
   firstName: string;
 
   @Column()
-  lastName: string;
+  enroll : number;
+
+  @Column()
+  email: string;
 
   @Column()
   age: number;
